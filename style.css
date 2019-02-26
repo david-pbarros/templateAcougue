@@ -1,0 +1,195 @@
+/*
+    Theme Name: Thema para Açougue
+    Author Name: David
+*/
+
+/*
+*
+* GENERAL ************
+*
+*/
+
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+div,
+body,
+article,
+aside,
+section,
+ul,
+nav,
+header,
+footer {
+    box-sizing: border-box;
+    display: block;
+}
+
+body {
+    margin: 0px;
+}
+
+main {
+    margin: 8px;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.banner__text {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: 10%;
+    letter-spacing: 3px;
+    text-shadow: 2px 2.5px 3px #334;
+}
+
+.banner__text h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.banner__text h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.top-bar__menu {
+    position: relative;
+    top: -17px;
+    background-color: rgb(229, 226, 226);
+    width: 100%;
+    display: inline-block;
+    /*overflow: hidden;*/
+}
+
+.top-bar__menu li {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.top-bar__menu a {
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+    display: block;
+    text-align: left;
+}
+
+.menu-item-has-children {
+    float: left;
+    overflow: hidden;
+}
+
+.menu-item-has-children > a::after {
+    content: " \f107";
+    font-family: 'FontAwesome';
+}
+
+.menu-item-has-children .menu-item-has-children > a::after {
+    content: " \f105";
+    font-family: 'FontAwesome';
+}
+
+.menu-item-has-children:hover > a::after {
+    content: " \f106";
+    font-family: 'FontAwesome';
+}
+
+.menu-item-has-children .menu-item-has-children:hover > a::after {
+    content: " \f104";
+    font-family: 'FontAwesome';
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 41px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+    padding-left: 0px;
+}
+
+.sub-menu .sub-menu {
+    position: absolute;
+    left: calc(100% + 1px);
+    top: calc(1% + 5px);
+    background-color:#f9f9f9;
+}
+
+.sub-menu li {
+    float: none;
+    display: block;
+}
+
+.sub-menu::before {
+    position: absolute;
+    top: -12px;
+    left: 7px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 13px solid #f9f9f9;
+}
+
+.sub-menu .sub-menu::before {
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 13px solid #f9f9f9;
+    border-bottom: 9px solid transparent;
+    border-top: 9px solid transparent;
+}
+
+/* Show the submenu when the user moves the mouse over the dropdown button */
+.top-bar__menu li:hover >.sub-menu {
+    display: block;
+}
+
+/* Style the links inside the dropdown*/
+.sub-menu li a {
+    float: none;
+    text-align: left;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    
+    text-decoration: none;
+    display: block;
+    
+  }
